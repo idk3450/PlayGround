@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#101a27">
+  <title>SKYWARD — A Flight-Safety Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell" aria-label="Skyward game">
+    <canvas id="game" width="960" height="540" aria-label="2D flight safety fighting game"></canvas>
+    <div class="topline"><span class="brand">SKYWARD <i>✦</i></span><span class="tagline">A FLIGHT-SAFETY STORY</span></div>
+    <section class="screen" id="screen" aria-live="polite"></section>
+    <div class="touch-controls" id="touchControls" aria-label="Touch controls">
+      <div class="move-pad"><button data-action="left" aria-label="Move left">◀</button><button data-action="right" aria-label="Move right">▶</button></div>
+      <div class="fight-pad"><button data-action="block" class="block" aria-label="Block">GUARD</button><button data-action="light" aria-label="Quick strike">JAB</button><button data-action="heavy" class="heavy" aria-label="Heavy strike">KICK</button></div>
+    </div>
+    <div class="footer-note">A fictional, non-graphic alternate-history game · Remembering all those affected</div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
